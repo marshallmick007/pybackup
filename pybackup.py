@@ -81,7 +81,23 @@ def main(argv):
 		
 
 def usage():
-	print "Usage: pybackup.py [-h] [-v] file"
+	print \
+"""pybackup.py version 0.1 by Marshall 
+
+Usage: pybackup.py [-h] [-v] [-l] [-a file] [-d file]
+
+-a file --add file      Add a file to the backup set
+
+--configure             Runs the configuration wizard
+
+-d file	--delete file   Deletes a file from the backup set
+
+-h --help               Displays this help
+
+-l --list               Lists all files in the backup set
+
+-v --verbose            Diaplays verbose diagnostics"""
+			
 	
 def read_configuration():
 	return
